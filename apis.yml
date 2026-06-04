@@ -1,0 +1,58 @@
+aid: opendata-ugr-es
+name: Bienvenido a OpenData UGR
+description: >-
+  Bienvenido a OpenData UGR is a open data portal open-data portal for Spain running CKAN.
+  It exposes the CKAN catalog API, a standardized machine-readable interface over approximately 65 datasets,
+  supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
+  consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
+kind: government
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/opendata-ugr-es/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - DCAT
+  - Government Data
+  - Open Data Portal
+  - Spain
+created: '2026-06-04'
+modified: '2026-06-04'
+specificationVersion: '0.19'
+apis:
+  - aid: opendata-ugr-es:catalog
+    name: Bienvenido a OpenData UGR CKAN Action API
+    description: >-
+      CKAN Action API for Bienvenido a OpenData UGR, a consistent JSON-over-HTTP interface over a catalog of 65 datasets. Standard actions include package_search, package_show, package_list, organization_list, group_list, tag_list, and resource_search; datastore_search is available where the DataStore extension is enabled. Base URL https://opendata.ugr.es/api/3/action/.
+    humanURL: https://opendata.ugr.es
+    baseURL: https://opendata.ugr.es/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/latest/api/
+      - type: Website
+        url: https://opendata.ugr.es
+      - type: x-api-endpoint
+        url: https://opendata.ugr.es/api/3/action/status_show
+common:
+  - type: Website
+    url: https://opendata.ugr.es
+  - type: Documentation
+    url: https://docs.ckan.org/en/latest/api/
+  - type: Plans
+    url: plans/opendata-ugr-es-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/opendata-ugr-es-rate-limits.yml
+  - type: FinOps
+    url: finops/opendata-ugr-es-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
