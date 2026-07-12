@@ -41,6 +41,8 @@ apis:
       - type: x-api-endpoint
         url: https://opendata.ugr.es/api/3/action/status_show
 common:
+  - type: DomainSecurity
+    url: security/opendata-ugr-es-domain-security.yml
   - type: Website
     url: https://opendata.ugr.es
   - type: Documentation
